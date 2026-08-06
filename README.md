@@ -1,6 +1,6 @@
 # NEXORA — HubSpot Enterprise CRM Implementation
 
-> Enterprise-grade HubSpot CRM implementation for a fictional AI-powered EdTech SaaS company (Nexora), demonstrating how Marketing, Sales, Service, Operations, CMS, Developer Platform, and AI-powered automation work together inside a unified CRM ecosystem.
+> Enterprise-grade HubSpot CRM implementation for a fictional AI-powered B2B SaaS company (Nexora), demonstrating how Marketing, Sales, Service, Operations, CMS, Developer Platform, and AI-powered automation work together inside a unified CRM ecosystem.
 
 ---
 
