@@ -4,7 +4,7 @@
 
 This document defines Nexora's subscription strategy, pricing structure, revenue model, and commercial offerings.
 
-The pricing model has been intentionally designed to simulate a realistic B2B SaaS business while supporting enterprise-level HubSpot CRM implementation scenarios such as deal management, subscriptions, renewals, quotes, forecasting, payments, and revenue reporting.
+The pricing model is designed to reflect a realistic AI-powered B2B SaaS business while supporting scalable customer growth, predictable recurring revenue, long-term customer relationships, and enterprise adoption.
 
 ---
 
@@ -12,7 +12,7 @@ The pricing model has been intentionally designed to simulate a realistic B2B Sa
 
 Nexora follows a tiered subscription model with both monthly and annual billing options.
 
-This approach allows businesses of different sizes to adopt the platform while creating natural opportunities for upgrades, renewals, and expansion.
+This approach enables businesses of different sizes to adopt the platform while creating natural opportunities for upgrades, renewals, expansion, and long-term customer success.
 
 ---
 
@@ -26,11 +26,11 @@ Small businesses and early-stage startups.
 
 ### Monthly
 
-USD $49
+**USD $49**
 
 ### Annual
 
-USD $490
+**USD $490**
 
 ### Key Features
 
@@ -51,11 +51,11 @@ Growing companies with expanding sales and marketing teams.
 
 ### Monthly
 
-USD $149
+**USD $149**
 
 ### Annual
 
-USD $1,490
+**USD $1,490**
 
 ### Key Features
 
@@ -79,11 +79,11 @@ Mid-market businesses requiring advanced automation and analytics.
 
 ### Monthly
 
-USD $399
+**USD $399**
 
 ### Annual
 
-USD $3,990
+**USD $3,990**
 
 ### Key Features
 
@@ -103,13 +103,13 @@ Everything in Growth, plus:
 
 ### Pricing
 
-Custom Quote
+**Custom Quote**
 
 ### Features
 
 - Dedicated Customer Success Manager
 - Custom Integrations
-- SLA
+- Service Level Agreements (SLAs)
 - Enterprise APIs
 - Advanced Security
 - White-glove Onboarding
@@ -128,12 +128,13 @@ Available add-ons include:
 - WhatsApp Automation
 - Premium Support
 - API Expansion Pack
+- Implementation & Migration Services
 
 ---
 
 # Free Trial
 
-All new customers receive a 14-day free trial without requiring a credit card.
+All new customers receive a **14-day free trial** without requiring a credit card.
 
 The trial is designed to encourage product adoption before subscription.
 
@@ -152,11 +153,11 @@ Customers may choose between:
 
 Nexora generates revenue through:
 
-- Monthly subscriptions
-- Annual subscriptions
-- Enterprise contracts
-- Professional services
-- Premium add-ons
+- Monthly Subscriptions
+- Annual Subscriptions
+- Enterprise Contracts
+- Implementation & Professional Services
+- Premium Add-on Services
 
 ---
 
@@ -166,8 +167,8 @@ The pricing model supports long-term customer relationships through recurring re
 
 ---
 
-# Why This Pricing Model Was Chosen
+# Pricing Strategy Benefits
 
-The subscription model reflects common practices used by modern B2B SaaS companies.
+This pricing strategy is designed to support sustainable recurring revenue while encouraging customer expansion, annual commitments, enterprise adoption, and long-term account growth.
 
-It also provides realistic business scenarios for implementing HubSpot CRM features including products, quotes, deal pipelines, payments, subscription management, renewals, reporting, forecasting, and customer lifecycle automation.
+Its tiered structure allows organizations to begin with the capabilities they need today and seamlessly upgrade as their business grows, creating a scalable commercial model that benefits both customers and Nexora over the long term.
