@@ -72,7 +72,7 @@ The objective is to demonstrate enterprise CRM architecture, business process de
 
 ## 5. Enterprise Implementation Roadmap
 
-![Implementation Roadmap](assets/diagrams/week-0-enterprise-implementation-roadmap.png)
+![Implementation Roadmap](assets/diagrams/week-0-hubspot-enterprise-implementation-roadmap.png)
 
 ---
 
