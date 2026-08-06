@@ -9,7 +9,6 @@ This directory contains the complete business planning and project foundation fo
 - 03_Ideal_Customer_Profile.md
 - 04_Pricing_Model.md
 - 05_Business_Blueprint.md
-- 06_Week_0_Summary.md
 
 ## Objective
 
