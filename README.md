@@ -54,7 +54,7 @@ The objective is to demonstrate enterprise CRM architecture, business process de
 
 ## 2. Business Process Flow
 
-![Business Process Flow](assets/diagrams/week-0-business-process-flow.png)
+![Business Process Flow](assets/diagrams/week-0-business- process-flow.png)
 
 ---
 
