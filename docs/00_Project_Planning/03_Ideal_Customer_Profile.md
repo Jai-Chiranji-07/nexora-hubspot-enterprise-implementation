@@ -4,7 +4,7 @@
 
 This document defines the Ideal Customer Profile (ICP) for Nexora. It identifies the businesses, decision-makers, and business challenges the platform is designed to serve.
 
-Establishing a clear ICP ensures that all CRM objects, workflows, automations, marketing campaigns, sales pipelines, and reporting are aligned with realistic business requirements.
+Establishing a clear ICP ensures that CRM objects, workflows, automations, marketing campaigns, sales pipelines, reporting, and customer success strategies remain aligned with real business requirements.
 
 ---
 
@@ -12,7 +12,7 @@ Establishing a clear ICP ensures that all CRM objects, workflows, automations, m
 
 ## Company Type
 
-Growing B2B SaaS Companies
+**Growing B2B SaaS Companies**
 
 ---
 
@@ -34,7 +34,7 @@ Growing B2B SaaS Companies
 - Canada
 - United Kingdom
 - Australia
-- Europe
+- Selected European Markets
 
 ---
 
@@ -74,7 +74,7 @@ Growing B2B SaaS Companies
 
 # Secondary Target Industries
 
-Although Nexora primarily targets B2B SaaS companies, the platform is also suitable for:
+Although Nexora primarily targets growing B2B SaaS companies, the platform is also well suited for:
 
 - Marketing Agencies
 - IT Consulting Companies
@@ -94,7 +94,7 @@ Responsible for business growth, strategic planning, and revenue.
 
 ## Sales Manager
 
-Responsible for sales performance, pipeline management, and forecasting.
+Responsible for sales performance, pipeline management, forecasting, and revenue growth.
 
 ---
 
@@ -106,13 +106,19 @@ Responsible for lead generation, campaigns, marketing automation, and customer a
 
 ## Customer Success Manager
 
-Responsible for onboarding, customer retention, renewals, and account growth.
+Responsible for onboarding, customer retention, renewals, customer health, and account growth.
 
 ---
 
 ## Operations Manager
 
-Responsible for CRM administration, data quality, process optimization, and business operations.
+Responsible for business operations, process optimization, workflow efficiency, and data quality.
+
+---
+
+## CRM Administrator / RevOps Manager
+
+Responsible for CRM configuration, integrations, automation, data governance, reporting, and overall platform administration.
 
 ---
 
@@ -135,7 +141,7 @@ Responsible for CRM administration, data quality, process optimization, and busi
 
 # Why This ICP Matters
 
-The Ideal Customer Profile serves as the strategic foundation for every future implementation throughout this project.
+The Ideal Customer Profile serves as the strategic foundation for Nexora's business, marketing, sales, customer success, and operational strategy.
 
 It directly influences:
 
@@ -149,4 +155,4 @@ It directly influences:
 - Reporting dashboards
 - Business analytics
 
-By defining the ICP before implementing HubSpot, every configuration in this project reflects realistic enterprise business requirements.
+A well-defined ICP ensures that every customer-facing process remains aligned with the organizations Nexora is designed to serve, enabling consistent growth, better customer experiences, and data-driven business decisions.
