@@ -2,15 +2,17 @@
 
 ## Overview
 
-This document defines the complete operating model of Nexora, an AI-powered B2B SaaS company. It serves as the business foundation for the entire HubSpot implementation project.
+This document defines the complete operating model of Nexora, an AI-powered B2B SaaS company.
 
-Every CRM object, workflow, automation, integration, dashboard, and report implemented throughout this project will be based on the business processes defined in this blueprint.
+It establishes how the business operates across marketing, sales, customer success, customer support, operations, and product engineering while providing the operational foundation for every customer-facing business process.
 
 ---
 
 # Business Overview
 
-Nexora is a subscription-based SaaS company that helps growing businesses centralize marketing, sales, customer success, operations, and analytics through AI-powered automation.
+Nexora is a subscription-based AI-powered B2B SaaS company that helps growing businesses centralize marketing, sales, customer success, operations, and analytics through intelligent automation.
+
+The platform enables organizations to manage their complete customer lifecycle from first interaction to long-term customer growth using one unified CRM ecosystem.
 
 ---
 
@@ -22,7 +24,7 @@ Nexora is a subscription-based SaaS company that helps growing businesses centra
 
 - Generate website traffic
 - Capture leads
-- Run campaigns
+- Run marketing campaigns
 - Nurture prospects
 - Qualify leads
 
@@ -32,8 +34,9 @@ Nexora is a subscription-based SaaS company that helps growing businesses centra
 
 ### Responsibilities
 
-- Manage opportunities
-- Conduct product demos
+- Manage sales opportunities
+- Conduct discovery calls
+- Deliver product demonstrations
 - Prepare quotations
 - Close deals
 - Forecast revenue
@@ -57,7 +60,7 @@ Nexora is a subscription-based SaaS company that helps growing businesses centra
 ### Responsibilities
 
 - Ticket management
-- Knowledge base
+- Knowledge Base
 - SLA management
 - Customer satisfaction
 
@@ -79,7 +82,7 @@ Nexora is a subscription-based SaaS company that helps growing businesses centra
 
 ### Responsibilities
 
-- APIs
+- REST APIs
 - Webhooks
 - CRM Extensions
 - Third-party integrations
@@ -93,11 +96,12 @@ Nexora is a subscription-based SaaS company that helps growing businesses centra
 2. Lead Capture
 3. Marketing Qualified Lead (MQL)
 4. Sales Qualified Lead (SQL)
-5. Product Demo
-6. Opportunity Created
-7. Proposal / Quote
-8. Deal Closed
-9. Customer
+5. Discovery Call
+6. Product Demo
+7. Opportunity Created
+8. Proposal / Quote
+9. Deal Closed
+10. Customer
 
 ---
 
@@ -120,33 +124,35 @@ Marketing generates qualified leads.
 
 ↓
 
-Sales converts qualified leads into customers.
+Sales qualifies opportunities, conducts discovery calls and product demonstrations, then converts prospects into customers.
 
 ↓
 
-Customer Success ensures successful onboarding and adoption.
+Customer Success ensures successful onboarding, product adoption, and long-term account growth.
 
 ↓
 
-Support resolves customer issues.
+Customer Support resolves customer issues and maintains customer satisfaction.
 
 ↓
 
-Operations maintains data quality and business automation.
+Operations maintains CRM data quality, automates business processes, and manages business systems.
 
 ↓
 
-Leadership monitors business performance through dashboards and reporting.
+Leadership monitors business performance through dashboards, analytics, forecasting, and operational reporting.
 
 ---
 
 # Technology Ecosystem
 
-Core Business Platform
+## Core Business Platform
 
 - HubSpot CRM
 
-Business Tools
+---
+
+## Business Tools
 
 - Stripe
 - Razorpay
@@ -157,6 +163,7 @@ Business Tools
 - Zapier
 - Zoom
 - Power BI
+- OpenAI API
 
 ---
 
@@ -166,7 +173,7 @@ Business Tools
 
 - Website Visitors
 - Visitor-to-Lead Conversion Rate
-- Marketing Qualified Leads
+- Marketing Qualified Leads (MQLs)
 
 ---
 
@@ -187,7 +194,7 @@ Business Tools
 
 ---
 
-## Support
+## Customer Support
 
 - First Response Time
 - Resolution Time
@@ -207,26 +214,26 @@ Business Tools
 
 # HubSpot Implementation Alignment
 
-This business blueprint provides the foundation for every implementation phase of this project.
+The business processes defined in this blueprint directly support the phased HubSpot implementation roadmap.
 
-Week 1 focuses on CRM data modeling.
-
-Week 2 focuses on lead acquisition.
-
-Week 3 focuses on marketing automation.
-
-Week 4 focuses on sales processes.
-
-Week 5 focuses on customer success, support, and operations.
-
-Week 6 focuses on developer capabilities.
-
-Week 7 focuses on integrations.
-
-Week 8 focuses on reporting, dashboards, and executive analytics.
+- Week 1 — CRM Data Model Foundation
+- Week 2 — Lead Acquisition & CRM Foundation
+- Week 3 — Marketing Automation
+- Week 4 — Sales Processes
+- Week 5 — Customer Success, Service & Operations
+- Week 6 — Developer Platform
+- Week 7 — Integrations
+- Week 8 — Reporting, Dashboards & Executive Analytics
 
 ---
 
-# Purpose
+# Operating Principles
 
-The objective of creating this blueprint before configuring HubSpot is to ensure that every technical implementation is driven by realistic business requirements, mirroring how enterprise HubSpot consulting projects are planned and executed.
+Nexora operates according to six core principles:
+
+- Customer-First
+- AI-First
+- Automation-First
+- Data-Driven Decision Making
+- Unified CRM as the Single Source of Truth
+- Scalable Platform Architecture
