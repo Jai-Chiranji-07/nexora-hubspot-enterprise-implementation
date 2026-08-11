@@ -28,19 +28,18 @@ The objective is to demonstrate enterprise CRM architecture, business process de
 
 # Technology Stack
 
-- HubSpot CRM
-- Marketing Hub
-- Sales Hub
-- Service Hub
-- Operations Hub
-- Content Hub (CMS)
-- HubSpot Developer Platform
-- HubSpot Workflows
+**Core CRM Ecosystem:**
+- HubSpot CRM (Marketing, Sales, Service, Operations, Content Hubs)
 - HubSpot Breeze AI
-- REST APIs
-- Webhooks
-- OAuth
-- Private Apps
+- HubSpot Workflows & Automation
+
+**Developer & Integration Layer:**
+- REST APIs & Webhooks
+- OAuth & Private Apps
+- Node.js/Express (Server-side Webhook handling)
+- Stripe (Multi-currency payment integration)
+- OpenAI API (Custom AI product integrations)
+- Zapier / External Connectors
 
 ---
 
@@ -109,20 +108,22 @@ README.md
 | Phase | Status |
 |-------|--------|
 | Week 0 — Business Planning & Architecture | ✅ Completed |
-| Week 1 — CRM Foundation | Planned |
-| Week 2 — Marketing Hub | Planned |
-| Week 3 — Sales Hub | Planned |
-| Week 4 — Service Hub | Planned |
-| Week 5 — Operations Hub | Planned |
-| Production Launch | Planned |
+| Week 1 — CRM Data Model Foundation | Planned |
+| Week 2 — Multi-Source Lead Capture | Planned |
+| Week 3 — Marketing Hub Deep Dive | Planned |
+| Week 4 — Sales Hub Deep Dive | Planned |
+| Week 5 — Service & Operations Hub | Planned |
+| Week 6 — Developer Features (APIs, Webhooks) | Planned |
+| Week 7 — Third-Party Integrations & CMS | Planned |
+| Week 8 — Advanced Reporting & Documentation | Planned |
 
 ---
 
 # Week 0 Status
 
-- ✅ Business foundation established
-- ✅ Enterprise documentation completed
-- ✅ Business processes defined
+- ✅ Business foundation established (Hybrid PLG + Sales-Led)
+- ✅ Enterprise documentation & scale assumptions completed
+- ✅ Business processes & compliance (GDPR/Multi-currency) defined
 - ✅ Customer lifecycle designed
 - ✅ HubSpot solution architecture finalized
 - ✅ Enterprise implementation roadmap completed
