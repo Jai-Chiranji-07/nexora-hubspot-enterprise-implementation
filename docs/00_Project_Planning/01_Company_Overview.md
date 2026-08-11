@@ -2,7 +2,9 @@
 
 ## Company Name
 
-**Nexora**
+**Nexora, Inc.**
+
+*(Referred to as "Nexora" throughout this documentation.)*
 
 ---
 
@@ -101,3 +103,26 @@ From the moment a visitor discovers a company through marketing channels to beco
 The platform leverages artificial intelligence, automation, integrations, analytics, and centralized customer data to help organizations scale efficiently while delivering personalized customer experiences.
 
 Its subscription-based business model provides organizations with a modern, scalable, and intelligent business growth platform capable of supporting marketing, sales, service, and operational excellence from one unified system.
+
+---
+
+# Compliance & Data Governance
+
+## Regulatory Scope
+
+Nexora's target markets span the United States, Canada, the United Kingdom, Australia, and selected European markets. As a result, the platform's CRM data handling must account for multiple overlapping privacy regimes:
+
+- **GDPR (General Data Protection Regulation)** — applies to Nexora's European customers and their end users. Consent capture, right-to-erasure, and data portability requests are handled through HubSpot's native GDPR tooling (cookie consent banners, communication subscription preferences, and data deletion workflows tied to Contact records).
+- **CCPA / CPRA (California, USA)** — applies to U.S. customers based in California; governs the right to know, delete, and opt out of data sale.
+- **PIPEDA (Canada)** — governs collection, use, and disclosure of personal data for Canadian customers.
+
+## Data Residency & Retention
+
+- Customer data is retained for the duration of an active subscription plus a defined post-cancellation retention window (90 days) before permanent deletion, in line with GDPR's data minimization principle.
+- HubSpot's EU data hosting option is used for enterprise customers that contractually require EU-based data residency.
+- Data deletion requests are processed through a dedicated internal workflow that cascades removal across Contacts, Companies, and associated custom objects (e.g., Subscriptions) to avoid orphaned records.
+
+## Multi-Currency Billing
+
+- Stripe is configured for multi-currency billing (USD, GBP, EUR, CAD, AUD) to match Nexora's target markets.
+- Subscription amounts are synced to HubSpot Deal and Subscription properties in the customer's native billing currency, with a normalized USD-equivalent property maintained for consolidated revenue reporting.
