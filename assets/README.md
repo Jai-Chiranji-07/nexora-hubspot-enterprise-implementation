@@ -1,25 +1,35 @@
 # Assets
 
-This directory contains all visual assets created for the Nexora Enterprise HubSpot CRM Implementation project.
+This directory contains all visual assets, architecture diagrams, and system screenshots created for the Nexora Enterprise HubSpot CRM Implementation project.
 
 These assets support the project documentation, GitHub repository, portfolio case study, and future client presentations.
 
 ---
 
-# Structure
+# Directory Structure
 
-- diagrams/
+- `diagrams/` — Contains all enterprise architecture diagrams, business workflow visuals, and data models.
+- `screenshots/` — (Planned) Will contain proof-of-implementation UI screenshots from the live HubSpot CRM instance.
 
-Contains all enterprise architecture diagrams and business visuals created throughout the implementation roadmap.
+---
 
-Current diagrams include:
+# Visual Assets Log
 
+## Week 0 – Setup & Planning
 - Week 0 – Business Overview
 - Week 0 – Business Process Flow
 - Week 0 – Customer Lifecycle Journey
 - Week 0 – HubSpot Solution Architecture
 - Week 0 – HubSpot Enterprise Implementation Roadmap
 
+## Week 1 – CRM Data Model Foundation
+- *(Planned) Data Model ERD (Entity Relationship Diagram)*
+
+## Future Weeks
+- *(Planned) Lead Source Attribution Reports*
+- *(Planned) Marketing & Sales Dashboards*
+- *(Planned) Integration Architecture Diagrams*
+
 ---
 
-Additional asset categories may be introduced in future implementation phases as needed.
+*Note: This log will be updated continuously as new implementation phases are completed and new visual assets are generated.*
