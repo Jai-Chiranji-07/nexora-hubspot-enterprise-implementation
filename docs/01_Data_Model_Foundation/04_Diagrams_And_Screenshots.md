@@ -86,7 +86,7 @@ erDiagram
 ### Suggested Folder Structure
 
 ```
-docs/01_Data_Model/
+docs/01_Data_Model_Foundation/
 ├── 01_Architecture_Overview.md
 ├── 02_Object_Schema_Dictionary.md
 ├── 03_Data_Governance_Rules.md
