@@ -112,14 +112,11 @@ docs/01_Data_Model/
 | `04_company_properties_groups_view.png` | Company property groups list showing Business Info, Subscription & Billing, Compliance & Consent, Support & Success | `02_Object_Schema_Dictionary.md` §1 |
 | `05_contact_properties_groups_view.png` | Contact property groups list | `02_Object_Schema_Dictionary.md` §2 |
 | `06_calc_arr_amount_config.png` | ARR Amount property editor showing the Custom Equation and the **green "No issues" validation indicator** | `03_Data_Governance_Rules.md` §1.1 |
-| `07_calc_trial_days_remaining_chain.png` | Both `trial_days_elapsed` and `trial_days_remaining` property configs, side by side or sequential | `03_Data_Governance_Rules.md` §1.2 |
-| `08_rollup_total_active_mrr_config.png` | Total Active MRR rollup config showing Sum type, associated object = SaaS Subscription, and the Additional Condition filter (`subscription_status = Active`) | `03_Data_Governance_Rules.md` §1.3 |
-| `09_calc_customer_health_score_equation.png` | Customer Health Score equation builder showing the full weighted formula, green validation indicator | `03_Data_Governance_Rules.md` §1.4 |
-| `10_external_billing_id_unique_constraint.png` | `external_billing_id` property editor showing "Require unique value" toggled on | `03_Data_Governance_Rules.md` §3.2 |
-| `11_sample_saas_subscription_record.png` | One populated sample SaaS Subscription record, showing associations panel (Company, Contact, Deal) | `01_Architecture_Overview.md` §3 |
+| `07_rollup_total_active_mrr_config.png` | Total Active MRR rollup config showing Sum type, associated object = SaaS Subscription, and the Additional Condition filter (`subscription_status = Active`) | `03_Data_Governance_Rules.md` §1.3 |
+| `08_external_billing_id_unique_constraint.png` | `external_billing_id` property editor showing "Require unique value" toggled on | `03_Data_Governance_Rules.md` §3.2 |
 
 **Usage note:** Each `.md` file in this folder should embed its relevant screenshot(s) inline using standard Markdown image syntax once captured, e.g.:
 
 ```markdown
-![Total Active MRR rollup configuration](./screenshots/08_rollup_total_active_mrr_config.png)
+![Total Active MRR rollup configuration](./screenshots/07_rollup_total_active_mrr_config.png)
 ```
