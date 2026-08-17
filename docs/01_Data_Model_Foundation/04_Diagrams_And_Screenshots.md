@@ -99,11 +99,8 @@ docs/01_Data_Model/
     ├── 04_company_properties_groups_view.png
     ├── 05_contact_properties_groups_view.png
     ├── 06_calc_arr_amount_config.png
-    ├── 07_calc_trial_days_remaining_chain.png
-    ├── 08_rollup_total_active_mrr_config.png
-    ├── 09_calc_customer_health_score_equation.png
-    ├── 10_external_billing_id_unique_constraint.png
-    └── 11_sample_saas_subscription_record.png
+    ├── 07_rollup_total_active_mrr_config.png
+    └── 08_external_billing_id_unique_constraint.png
 ```
 
 ### Capture Mapping
