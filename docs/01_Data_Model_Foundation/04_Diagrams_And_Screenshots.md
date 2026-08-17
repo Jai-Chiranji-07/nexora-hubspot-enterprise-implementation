@@ -6,9 +6,8 @@
 |---|---|
 | Document Name | Nexora, Inc. — Data Model Diagrams & Evidence Tracking |
 | Phase | Week 1 — CRM Data Model Foundation |
-| Version | 1.0 |
+| Status | Built & Live in Developer Portal |
 | Related Documents | `01_Architecture_Overview.md`, `02_Object_Schema_Dictionary.md` |
-| Last Updated | 2026-08-12 |
 
 ---
 
