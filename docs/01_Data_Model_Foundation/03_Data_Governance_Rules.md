@@ -6,9 +6,8 @@
 |---|---|
 | Document Name | Nexora, Inc. — Data Governance & Calculation Logic |
 | Phase | Week 1 — CRM Data Model Foundation |
-| Version | 1.1 |
-| Related Documents | `01_Architecture_Overview.md`, `02_Object_Schema_Dictionary.md` |
-| Last Updated | 2026-08-12 |
+| Status | Built & Live in Developer Portal |
+| Related Documents | `01_Architecture_Overview.md`, `02_Object_Schema_Dictionary.md`, `04_Diagrams_And_Screenshots.md` |
 
 ---
 
@@ -22,12 +21,10 @@ All calculated properties use HubSpot's **Calculation** field type, built via th
 - **Formula:** `[properties.mrr_amount] * 12`
 - **Purpose:** Derives Annual Recurring Revenue directly from Monthly Recurring Revenue, avoiding manual dual-entry.
 
-### 1.2 Trial Days Remaining (`trial_days_remaining` — Contact)
+### 1.2 Trial Days Remaining (`trial_days_remaining` — Contact) ⚪ **Modified / Reverted to Number**
 
-Built as a two-property chain rather than a single formula, per HubSpot's guidance to break complex nested logic into smaller chained properties:
-
-- **Step 1 — `trial_days_elapsed`:** Calculation type = Time Since, base property = `trial_start_date`, output in days.
-- **Step 2 — `trial_days_remaining`:** Calculation type = Custom Equation, formula = `14 - [properties.trial_days_elapsed]`.
+- **Original Plan:** Built as a two-property chain.
+- **Actual Build:** Due to HubSpot calculation chaining constraints encountered during the portal build, `trial_days_remaining` was deployed as a standard **Number** field rather than a Custom Equation. It will be maintained via Workflows (Week 3) rather than real-time property calculations.
 - **Purpose:** Powers PLG self-serve trial nurture logic (Week 3) without requiring a workflow to recompute elapsed time on every enrollment check.
 
 ### 1.3 Total Active MRR (`total_active_mrr` — Company)
@@ -38,40 +35,38 @@ Built as a two-property chain rather than a single formula, per HubSpot's guidan
 - **Additional Condition (filter):** `subscription_status` equals `Active`
 - **Purpose:** Gives an always-current, single source of truth for a Company's current recurring revenue, independent of Deal-level `hs_mrr` (which reflects the deal that sold the subscription, not necessarily its current live state after upgrades/downgrades).
 
-### 1.4 Customer Health Score (`customer_health_score` — Company) — Two-Layer Architecture
+### 1.4 Customer Health Score (`customer_health_score` — Company) ⚪ **Backlog (Deferred to Week 5)**
 
-**Layer 1 — Rollup helper properties (Company):**
+*Note: This architecture is deferred to the Service Hub implementation phase when Ticket and NPS data models are established.*
 
-| Helper Property | Calculation Type | Logic |
-|---|---|---|
-| `avg_feature_adoption` | Rollup — Average | Average `feature_adoption_pct` from associated Contacts |
-| `open_ticket_count` | Rollup — Count | Count of associated Tickets where status ≠ Closed |
-| `avg_nps_score` | Rollup — Average | Average `nps_score` from associated Contacts |
-| `subscription_health_input` | Rollup — Average | Average `subscription_status_score` (see 1.5 below) from associated SaaS Subscription records |
+**Layer 1 — Rollup helper properties (Company) [Planned]:**
+*   `avg_feature_adoption` (Average)
+*   `open_ticket_count` (Count)
+*   `avg_nps_score` (Average)
+*   `subscription_health_input` (Average)
 
-**Layer 2 — Final weighted formula (Company, Custom Equation):**
-
-```
+**Layer 2 — Final weighted formula (Company, Custom Equation) [Planned]:**
+```text
 ([properties.avg_feature_adoption] * 0.40) +
 (MAX(0, 100 - ([properties.open_ticket_count] * 10)) * 0.25) +
 ([properties.avg_nps_score] * 10 * 0.20) +
 ([properties.subscription_health_input] * 0.15)
 ```
 
-- Weights (40/25/20/15) match the methodology defined in `docs/00_Project_Planning/05_Business_Blueprint.md`.
-- `open_ticket_count` is inverted (more open tickets → lower score contribution).
-- `avg_nps_score` is normalized from a 0–10 scale to 0–100 via `× 10`.
-- **Note:** Enumeration properties (like `subscription_status`) cannot be referenced directly inside numeric equations — this is why `subscription_status_score` (below) exists as a numeric proxy.
+### 1.5 Subscription Status Score (`subscription_status_score` — SaaS Subscription, helper) **⚪ Backlog (Deferred to Week 5)**
 
-### 1.5 Subscription Status Score (`subscription_status_score` — SaaS Subscription, helper)
+*Note: Deferred alongside the Customer Health Score architecture.*
 
-- **Calculation type:** Custom Equation
-- **Formula:**
-```
+Calculation type: Custom Equation
+
+Formula [Planned]:
+
+```text
 IF([properties.subscription_status] == "Active", 100,
-  IF([properties.subscription_status] == "Past Due", 50, 0))
+IF([properties.subscription_status] == "Past Due", 50, 0))
 ```
-- **Purpose:** Converts the `subscription_status` dropdown into a numeric input so it can feed the Company-level `subscription_health_input` rollup and, ultimately, the Customer Health Score formula.
+
+Purpose: Converts the subscription_status dropdown into a numeric input so it can feed the Company-level subscription_health_input rollup and, ultimately, the Customer Health Score formula.
 
 ---
 
