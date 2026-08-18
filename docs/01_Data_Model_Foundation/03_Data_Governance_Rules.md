@@ -51,22 +51,19 @@ All calculated properties use HubSpot's **Calculation** field type, built via th
 (MAX(0, 100 - ([properties.open_ticket_count] * 10)) * 0.25) +
 ([properties.avg_nps_score] * 10 * 0.20) +
 ([properties.subscription_health_input] * 0.15)
-```
+\```
 
-### 1.5 Subscription Status Score (`subscription_status_score` — SaaS Subscription, helper) **⚪ Backlog (Deferred to Week 5)**
+### 1.5 Subscription Status Score (`subscription_status_score` — SaaS Subscription, helper) ⚪ **Backlog (Deferred to Week 5)**
 
 *Note: Deferred alongside the Customer Health Score architecture.*
 
-Calculation type: Custom Equation
-
-Formula [Planned]:
-
+- **Calculation type:** Custom Equation
+- **Formula [Planned]:**
 ```text
 IF([properties.subscription_status] == "Active", 100,
-IF([properties.subscription_status] == "Past Due", 50, 0))
-```
-
-Purpose: Converts the subscription_status dropdown into a numeric input so it can feed the Company-level subscription_health_input rollup and, ultimately, the Customer Health Score formula.
+  IF([properties.subscription_status] == "Past Due", 50, 0))
+\```
+- **Purpose:** Converts the `subscription_status` dropdown into a numeric input so it can feed the Company-level `subscription_health_input` rollup and, ultimately, the Customer Health Score formula.
 
 ---
 
@@ -77,8 +74,9 @@ Purpose: Converts the subscription_status dropdown into a numeric input so it ca
 | Email format | Contact `email` | Native HubSpot validation | ✅ Enforced (native, no configuration needed) |
 | Enumeration-constrained input | All dropdown properties (`plan_tier`, `subscription_status`, `region`, etc.) | Dropdown field type inherently prevents free-text drift | ✅ Enforced by field type |
 | Unique External Billing ID | SaaS Subscription `external_billing_id` | "Require unique value" advanced property setting | ✅ **Confirmed built** |
-| MRR non-negative | SaaS Subscription mrr_amount | Number field "Minimum value" advanced setting (>= 0) | ✅ Configured & Enforced |
+| MRR non-negative | SaaS Subscription `mrr_amount` | Number field "Minimum value" advanced setting (`>= 0`) | ✅ Configured & Enforced |
 
+---
 
 ## 3. Deduplication & Merge Strategy
 
